@@ -8,7 +8,7 @@ We have discussed eslint in [Best Practices][1] section, it helps to keep better
 
 ## Standards
 
-We have implemented few standards, which keeps our _Node code_ (wow a rhyme) readable and consistent. If you get involved into one of our project and adopt the basic structure of application, then you are able to easily switch to any other project. Even if you have never seen that project before, you should be able to implement new features or do change requests in reasonable times.
+We have implemented few standards, which keeps our _Node code_ (wow a rhyme) readable and consistent. If you get involved into one of our project and adopt the basic structure of application, then you are able to easily switch to any other project. Even if you have never seen that project before, you should be able to implement new features or do change requests in reasonable time.
 
 ### Node Template
 
@@ -45,12 +45,12 @@ The flow of app is as follows. The Node is started with server.js, it loads all 
 The config/routes defines basic structure of all routes with requiring app/routes modules. When request come, it finds path previously defined, it can go through middleware methods and hit function in controller. There it usually works with services or with facade methods. The facade is only file which is connected to database models and create queries for it. After it returns value, it goes all the way back to controller, where it is sent back to user.
 
 ## Naming conventions
-It is good to use one naming convention for all the variables, functions and classes in the whole application. The camelCase was the one that won, because of simplicity, lack of special characters and fact it is widely used
+It is good to use one naming convention for all the variables, functions and classes in the whole application. The camelCase was the one that won, because of simplicity, lack of special characters and fact it is widely used.
 
 ## Separation of concerns
-As mentioned in Architecture section of our cookbook, we try to not our applications to grow "too big" as time need to do anything in big project or get involved in it is huge.
+As mentioned in Architecture section of our cookbook, we try to keep our applications small as time need to do anything in big project or get involved in it is huge.
 
-The solution these days are microservices and Docker. If it makes sense and whole project is big enough, it is put into several microservices, which keeps each one of them small and well-arranged.
+The solution these days are microservices and Docker. If it makes sense and whole project is big enough, we split it into several microservices, which keeps each one of them small and well-arranged.
 
 ## Tests and Code coverage
 It is described in Best Practices section. The tests and code coverage tools help us keep our code tested and possibly easier to find weak spots.
